@@ -1,0 +1,168 @@
+:root {
+  --brancoPrincipal: #FFFFFF;
+  --cinza: #C0C0C0;
+  --botao: #167BF7;
+  --textoVermelhoClaro: #EC2F46;
+  --corDoFundo: #00030C;
+  --fonte-inter: 'Inter';
+  --botaoAzulEfeito: #5289cc;
+}
+
+body {
+  background-color: var(--corDoFundo);
+  color: var(--brancoPrincipal);
+  font-family: var(--fonte-inter);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.principal {
+  background-image: url("fotos/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* Botão Principal "Assine por 12x de R$ 120,00*" */
+.botao1 {
+  background-color: var(--botao);
+  border-radius: 5px;
+  padding: 1em;
+  color: var(--brancoPrincipal);
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+/*------------------------------------------------------------*/
+
+/* Botão secundario "Assinar somente o alura+" */
+.botao2 {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 1em;
+  color: var(--cinza);
+  display: block;
+  border: 2px solid var(--brancoPrincipal);
+  text-decoration: none;
+}
+/*------------------------------------------------------------*/
+
+.aviso {
+  color: var(--cinza);
+  font-size: 12px;
+  margin-top: 1em;
+}
+
+.titulo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.imagemCombo {
+  margin: 1em 0 2em 0;
+}
+
+.box {
+  margin: 0 6em;
+}
+
+/* Plataformas que a Alura+ esta disponivel. */
+.imagemPlataformas {
+  width: 80%;
+}
+
+.segundario {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.plataformasTitulo {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--brancoPrincipal);
+  margin-bottom: 0.2em;
+}
+
+.plataformasSobre {
+  color: var(--cinza);
+}
+/*------------------------------------------------------------*/
+
+/* Botão da parte de Telas do Alura */
+.botaoDeTelas {
+  display: inline-block;
+  margin-top: 1em;
+}
+/*------------------------------------------------------------*/
+
+/* Dispositivos */
+.dispositivosTitulos {
+  font-size: 48px;
+}
+
+.dispositivosListas {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 5em 1em;
+}
+
+.dispositivos {
+  text-align: center;
+  color: var(--brancoPrincipal);
+}
+
+.listaItem {
+  font-size: 32px;
+}
+/*------------------------------------------------------------*/
+
+.rodape {
+  margin-top: 15em ;
+  text-align: center;
+}
+
+.listaLink a{
+  font-size: 16px;
+  color: var(--brancoPrincipal);
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+.rodapeLista {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.rodapeTexto {
+  margin: 2em 0;
+  color: var(--cinza);
+  font-size: 14px;
+}
+
+.listaLink a:hover{
+  color: var(--botao);
+}
+
+.listaLink a:active{
+  color: var(--textoVermelhoClaro);
+}
+
+.efeito:hover{
+  color: black;
+  background-color: var(--textoVermelhoClaro);
+}
